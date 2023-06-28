@@ -55,7 +55,7 @@ todaysdate = timestamp.strftime("%B-%d-%Y")
 
 logging.info(f'Started {todaysdate} at {timestamp}')
 config = {}
-config_path = f'config.json'
+config_path = f'ict_config.json'
 with open(config_path, 'r') as config_fd:
     try:
         config = Config(**json.load(config_fd))
