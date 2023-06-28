@@ -91,7 +91,12 @@ logging.info(f'Attempting to download from URL: {episode_url}')
 # example URL to check
 # episode_url = 'https://soundcloud.com/indiancountrytoday/ict-newscast-for-june-27-2023'
 output_name = os.path.join(
-    music_dir, f'Indian Country Today - Full News {todaysdate}.mp3')
+    music_dir, f'Indian Country Today - Full News.mp3')
+
+try:
+    os.remove(output_name)
+except:
+    ...
 
 ydl_opts = {
     'outtmpl': output_name,
