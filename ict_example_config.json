@@ -1,0 +1,10 @@
+{
+    "source_email" : "",
+    "destination_emails" : [
+        "email1@gmail.com",
+        "email2@gmail.com"
+    ],
+    "email_password": "email_password",
+    "port": "465"
+}
+
